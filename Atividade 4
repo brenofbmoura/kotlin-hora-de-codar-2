@@ -1,0 +1,18 @@
+fun main(){
+    println("Informe o 1° valor: ")
+    var valor1 = readLine()!!.toInt()
+    println("Informe o 2° valor: ")
+    var valor2 = readLine()!!.toInt()
+    println("Informe o 3° valor: ")
+    var valor3 = readLine()!!.toInt()
+    if (valor1 < valor2 && valor1 < valor3){
+        var soma = valor2 + valor3
+        println("Soma $soma")
+    } else if (valor2 < valor1 && valor2 < valor3){
+        var soma = valor1 + valor3
+        println("Soma: $soma")
+    } else {
+        var soma = valor1 + valor2
+        println("Soma: $soma")
+    }
+}
