@@ -1,0 +1,16 @@
+fun main(){
+    var valores = mutableListOf<Double>()
+    for (i in 1..6){
+        println("Informe o $i° valor: ")
+        var valor = readLine()!!.toDouble()
+        valores.add(valor)
+    }
+    println("Valores informados: ")
+    for (v in valores){
+        println(v)
+    }
+    var soma = valores.sum()
+    var media = soma / 6.0
+    println("Média: $media")
+
+}
