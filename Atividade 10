@@ -1,0 +1,14 @@
+fun main(){
+    println("Informe sua altura: ")
+    var h = readln().toDouble()
+    println("Informe seu gênero (1-Masculino/2-Fêminino")
+    var genero = readln().toInt()
+    var pesoIdeal = 0.0
+    if (genero == 1){
+        pesoIdeal = (72.7 * h) - 58
+        println ("Peso ideal: $pesoIdeal")
+    }else if (genero == 2){
+        pesoIdeal = (62.1 * h) - 44.7
+        println ("Peso ideal: $pesoIdeal")
+    }
+}
