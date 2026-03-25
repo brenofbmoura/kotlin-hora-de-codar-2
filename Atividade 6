@@ -1,0 +1,12 @@
+fun main(){
+    var valores = mutableListOf<Double>()
+    for (i in 1..4){
+        println("Informe o $i° valor: ")
+        var valor = readLine()!!.toDouble()
+        valores.add(valor)
+    }
+    println("Primeiro valor: ${valores[0]}")
+    println("Último valor: ${valores[3]}")
+    var maior = valores.max()
+    println("O maior valor é $maior")
+}
