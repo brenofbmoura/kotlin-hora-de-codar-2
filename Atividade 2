@@ -1,0 +1,11 @@
+fun main() {
+    println("Informe um valor: ")
+    var valor = readLine()!!.toInt()
+    if (valor < 0) {
+        println("Número negativo!")
+    } else if (valor > 0) {
+        println("Positivo!")
+    } else {
+        println("0")
+    }
+}
