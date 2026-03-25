@@ -1,0 +1,15 @@
+fun main(){
+    println("Informe o 1° valor: ")
+    var valor1 = readLine()!!.toInt()
+    println("Informe o 2° valor: ")
+    var valor2 = readLine()!!.toInt()
+    println("Informe o 3° valor: ")
+    var valor3 = readLine()!!.toInt()
+    if (valor1 > valor2 && valor1 > valor3){
+        println("O maior é $valor1")
+    } else if(valor2 > valor3 && valor2 > valor1){
+        println("O maior é $valor2")
+    } else {
+        println("O maior é $valor3")
+    }
+}
