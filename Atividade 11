@@ -1,0 +1,22 @@
+fun main(){
+    var valores = mutableListOf<Int>()
+    for (i in 1..2){
+        println ("Digite o $i° valor: ")
+        var valor = readln().toInt()
+        valores.add(valor)
+    }
+    println("Informe a operação: ")
+    println ("1- Adição")
+    println ("2- Subtração")
+    println ("3- Divisão")
+    println ("4- Multiplicação")
+    var operacoes = readln().toInt()
+   var resultado = 0.0
+    when (operacoes){
+        1 -> resultado = (valores[0] + valores[1].toDouble())
+        2 -> resultado = (valores[0] - valores[1].toDouble())
+        3 -> resultado = (valores[0] / valores[1].toDouble())
+        4 -> resultado = (valores[0] * valores[1].toDouble())
+    }
+    println ("Resultado: $resultado")
+}
